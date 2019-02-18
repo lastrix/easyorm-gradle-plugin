@@ -10,12 +10,13 @@ buildscript {
 plugins {
     id 'java'
     id 'antlr'
+    id 'signing'
 }
 
 apply plugin: 'com.bmuschko.nexus'
 
 group 'com.github.lastrix'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 sourceCompatibility = 1.8
 
@@ -44,6 +45,12 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+}
+
+extraArchive {
+    nexus {
+        sign = true
+    }
 }
 
 modifyPom {
