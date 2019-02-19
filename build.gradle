@@ -29,8 +29,6 @@ dependencies {
     compile gradleApi()
     // https://mvnrepository.com/artifact/org.jetbrains/annotations
     compile group: 'org.jetbrains', name: 'annotations', version: '16.0.3'
-    // https://mvnrepository.com/artifact/org.gradle.api.plugins/gradle-nexus-plugin
-    compile group: 'org.gradle.api.plugins', name: 'gradle-nexus-plugin', version: '0.3'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.3'
     // https://mvnrepository.com/artifact/commons-io/commons-io
