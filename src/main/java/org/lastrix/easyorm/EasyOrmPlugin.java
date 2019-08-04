@@ -59,7 +59,7 @@ public class EasyOrmPlugin implements Plugin<Project> {
         task.setDescription("Generated database model files");
         task.getInputs().file(extension.model);
         task.getInputs().file(extension.javaTemplate);
-        task.getOutputs().file(generatedSourceDir);
+        task.getOutputs().dir(generatedSourceDir);
         project.getTasks().findByName("compileJava").dependsOn(task);
         project.getTasks().findByName("processResources").dependsOn(task);
 
