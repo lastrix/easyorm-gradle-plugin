@@ -3,3 +3,5 @@
 /gradle.properties
 /.idea/misc.xml
 /.idea/compiler.xml
+build
+.gradle
